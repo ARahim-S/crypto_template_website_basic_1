@@ -309,6 +309,15 @@
   line-height: 1.8;
 }
 
+.feature-ul {
+  list-style-type: none;
+  font-size: 1.8rem;
+}
+
+.feature-ul li {
+  margin: 2rem;
+}
+
 /* FEATURE ANIMATION */
 
 .feature span {
