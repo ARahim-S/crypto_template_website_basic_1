@@ -863,6 +863,8 @@ td {
 .section-countdown {
   background-color: #3bb5c3;
   padding: 2rem;
+  display: flex;
+  margin: 0 auto;
 }
 
 .section-countdown .container {
