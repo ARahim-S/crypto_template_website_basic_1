@@ -12,6 +12,22 @@
   position: relative;
 }
 
+.logo-title {
+  display: flex;
+}
+
+.logo-title a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.logo-title h1 {
+  color: #e67e22;
+  display: inline-block;
+  font-size: 3.8rem;
+}
+
 .logo-all {
   display: flex;
 }
@@ -164,6 +180,16 @@
 .community-container {
   display: flex;
   gap: 1.2rem;
+}
+
+.community-link:hover .community-icon {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.community-link:hover {
+  transform: scale(1.1) rotate(7deg);
+  transition: all 0.3s ease-out;
 }
 
 .community-link:link,
