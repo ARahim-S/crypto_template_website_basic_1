@@ -860,17 +860,34 @@ td {
 
 /* countdown */
 
+.section-countdown {
+  background-color: #3bb5c3;
+  padding: 2rem;
+}
+
+.section-countdown .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.countdown-h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
 .date-countdown-container {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 2rem;
 }
 
 .date-countdown-container h2 {
   background-color: #ddd;
-  padding: 20px;
-  border-radius: 10px;
-  border: 5px solid #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 3px solid #fff;
   -webkit-box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
     -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
