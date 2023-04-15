@@ -15,10 +15,13 @@ function drawChart() {
   ]);
 
   var options = {
-    width: 550,
-    height: 275,
+    width: "50%",
+    height: "50%",
     title: "Tokenomics",
     pieHole: 0.4,
+    backgroundColor: "#b29fab",
+    margin: "1rem",
+    padding: "1rem",
   };
 
   var chart = new google.visualization.PieChart(
@@ -99,7 +102,6 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
 
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
@@ -132,8 +134,48 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+//countdown functions
+let interval;
+const eventDay = new Date("04/20/2023");
+let dayField = document.getElementById("day");
+let hourField = document.getElementById("hour");
+let minuteField = document.getElementById("minute");
+let secondField = document.getElementById("second");
+const second = 1000;
+const minute = second * 60;
+const hour = minute * 60;
+const day = hour * 24;
+
+const countDownFn = () => {
+  let now = new Date();
+  let timeSpan = eventDay - now;
+
+  if (timeSpan <= -new Date()) {
+    console.log("Unfortunately we have past the event day");
+    clearInterval(interval);
+  } else if (timeSpan <= 0) {
+    console.log("Today is the event day");
+    clearInterval(interval);
+    return;
+  } else {
+    const days = Math.floor(timeSpan / day);
+    const hours = Math.floor((timeSpan % day) / hour);
+    const minutes = Math.floor((timeSpan % hour) / minute);
+    const seconds = Math.floor((timeSpan % minute) / second);
+
+    // Set results
+    dayField.innerHTML = `${days} D`;
+    hourField.innerHTML = `${hours}H`;
+    minuteField.innerHTML = `${minutes}M`;
+    secondField.innerHTML = `${seconds}S`;
+  }
+};
+
+everySecond = setInterval(countDownFn, second);
+everyMinute = setInterval(countDownFn, minute);
+everyHour = setInterval(countDownFn, hour);

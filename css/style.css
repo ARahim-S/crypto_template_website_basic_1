@@ -284,7 +284,7 @@
   color: #fff;
 }
 .feature:hover .feature-title {
-  color: #fff;
+  color: #e67e22;
 }
 
 .feature-icon {
@@ -600,6 +600,10 @@ td {
   align-self: center;
 }
 
+.dexview {
+  filter: invert(100%);
+}
+
 /* SECTION-ROADMAP */
 
 .section-roadmap {
@@ -852,4 +856,38 @@ td {
   color: #e67e22;
   display: inline-block;
   font-size: 2.2rem;
+}
+
+/* countdown */
+
+.date-countdown-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.date-countdown-container h2 {
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.date-countdown-container p {
+  background-color: #ddd;
+  padding: 2px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
