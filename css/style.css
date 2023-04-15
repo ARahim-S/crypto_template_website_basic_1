@@ -1,10 +1,15 @@
 /* HEADER */
 
+/* #7CACDA
+#B29FAB
+#73B179
+#3E7CC3 */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  background-color: #fde9f8;
 
   /* we want header to be sticky bit later */
   height: 9.6rem;
@@ -163,6 +168,7 @@
   width: 100%;
   border-radius: 11px;
   box-shadow: 0 0.4rem 0.5rem 0 rgb(0 0 0 / 30%);
+  transform: rotate(7deg);
 }
 
 /* SECTION-COMMUNITY */
@@ -248,6 +254,32 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   background-color: #fff;
+  transition: transform 0.4s ease-out;
+}
+
+.feature:hover {
+  transform: translateY(-1rem);
+  border: 3px solid #b29fab;
+  background-image: linear-gradient(
+    to right bottom,
+    #b29fab,
+    #b29fb3,
+    #aea0bd,
+    #a5a2c7,
+    #97a6d1,
+    #83aad5,
+    #6baed6,
+    #51b2d2,
+    #3bb5c3,
+    #3fb6ad,
+    #57b493,
+    #73b179
+  );
+  box-shadow: rgba(0, 0, 0, 0.075);
+  color: #fff;
+}
+.feature:hover .feature-title {
+  color: #fff;
 }
 
 .feature-icon {
