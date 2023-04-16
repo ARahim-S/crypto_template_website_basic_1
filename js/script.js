@@ -141,7 +141,7 @@ checkFlexGap();
 
 //countdown functions
 let interval;
-const eventDay = new Date("04/20/2023");
+const eventDay = new Date("04/16/2023 08:00:00 GMT+00:00");
 let dayField = document.getElementById("day");
 let hourField = document.getElementById("hour");
 let minuteField = document.getElementById("minute");
@@ -164,18 +164,17 @@ const countDownFn = () => {
     return;
   } else {
     const days = Math.floor(timeSpan / day);
-    const hours = Math.floor((timeSpan % day) / hour);
-    const minutes = Math.floor((timeSpan % hour) / minute);
-    const seconds = Math.floor((timeSpan % minute) / second);
+    let hours = Math.floor((timeSpan % day) / hour);
+    let minutes = Math.floor((timeSpan % hour) / minute);
+    let seconds = Math.floor((timeSpan % minute) / second);
 
     // Set results
     dayField.innerHTML = `${days} D`;
-    hourField.innerHTML = `${hours}H`;
-    minuteField.innerHTML = `${minutes}M`;
-    secondField.innerHTML = `${seconds}S`;
+    hourField.innerHTML = hours > 10 ? `${hours}H` : `0${hours}H`;
+    minuteField.innerHTML = minutes > 10 ? `${minutes}M` : `0${minutes}M`;
+    secondField.innerHTML = seconds > 10 ? `${seconds}S` : `0${seconds}S`;
   }
 };
-
 everySecond = setInterval(countDownFn, second);
 everyMinute = setInterval(countDownFn, minute);
 everyHour = setInterval(countDownFn, hour);
