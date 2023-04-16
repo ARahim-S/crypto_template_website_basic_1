@@ -313,6 +313,9 @@
     .main-nav-link:visited {
       font-size: 3rem;
     }
+    .countdown-content {
+      align-self: center;
+    }
   }
 }
 
@@ -366,6 +369,9 @@
   .no-flexbox-gap .main-nav-list li:not(:last-child) {
     margin-right: 0;
     margin-bottom: 4.8rem;
+  }
+  .countdown-content {
+    align-self: center;
   }
 }
 
@@ -449,6 +455,9 @@
     justify-items: flex-end;
     align-items: center;
   }
+  .countdown-content {
+    align-self: center;
+  }
 }
 
 /**************************/
@@ -457,5 +466,8 @@
 @media (max-width: 22em) {
   .contract-text {
     width: 32rem;
+  }
+  .countdown-content {
+    align-self: center;
   }
 }

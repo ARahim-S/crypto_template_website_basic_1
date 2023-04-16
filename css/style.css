@@ -860,6 +860,11 @@ td {
 
 /* countdown */
 
+.hero-text-box-countdown {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-countdown {
   background-color: #3bb5c3;
   padding: 2rem;
@@ -867,16 +872,10 @@ td {
   margin: 0 auto;
 }
 
-.section-countdown .container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
 .countdown-h1 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .date-countdown-container {

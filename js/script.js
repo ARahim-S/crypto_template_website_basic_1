@@ -141,7 +141,7 @@ checkFlexGap();
 
 //countdown functions
 let interval;
-const eventDay = new Date("04/16/2023 08:00:00 GMT+00:00");
+const eventDay = new Date("04/20/2023 08:00:00 GMT+00:00");
 let dayField = document.getElementById("day");
 let hourField = document.getElementById("hour");
 let minuteField = document.getElementById("minute");
