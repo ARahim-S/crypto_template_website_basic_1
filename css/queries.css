@@ -316,6 +316,10 @@
     .countdown-content {
       align-self: center;
     }
+    .contract-address-area {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }
 
@@ -430,6 +434,10 @@
     justify-content: center;
     align-items: center;
   }
+  .contract-address-area {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /**************************/
@@ -458,6 +466,10 @@
   .countdown-content {
     align-self: center;
   }
+  .contract-address-area {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /**************************/
@@ -469,5 +481,9 @@
   }
   .countdown-content {
     align-self: center;
+  }
+  .contract-address-area {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
