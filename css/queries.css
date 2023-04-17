@@ -235,6 +235,12 @@
       height: 4.8rem;
     }
 
+    .logos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .phase-all-info {
       width: 75%;
     }
@@ -438,6 +444,12 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /**************************/
@@ -470,6 +482,12 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /**************************/
@@ -484,6 +502,12 @@
   }
   .contract-address-area {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 }

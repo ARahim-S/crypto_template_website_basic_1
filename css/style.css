@@ -582,34 +582,33 @@ td {
 
 .section-partnerships {
   padding: 9.6rem 0;
+  background-color: #dddcdb;
 }
 
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
 }
 .heading-partnerships {
-  font-size: 1.4rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 0.75px;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 2.4rem;
-  color: #888;
+  color: #e67e22;
 }
 
 .logos {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
 }
 
 .logos img {
   height: 6.4rem;
-}
-
-.binance {
-  height: 3.2rem !important;
-  display: flex;
-  align-self: center;
+  object-fit: contain;
 }
 
 .dexview {
